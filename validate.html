@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="formstyle.css" type="text/css">
+</head>
+<body>
+    <form id="register">
+        <div class="container">
+            <h1>Registration Form</h1>
+            <div id="fname">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="Firstname" autocomplete="off">
+                <span id="firstnameerror" class="error"></span>
+                
+            </div>
+            <div id="lname">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="Lastname" autocomplete="off">
+                <span id="lastnameerror" class="error"></span>
+            </div>
+            <div id="maildiv">
+                <label for="email">Email ID</label>
+                <input type="text" id="email" name="Email ID" autocomplete="off">
+                <span id="emailerror" class="error"></span>
+            </div>
+            <div id="phone">
+                <label for="mobilenumber">Mobile number</label>
+                <input type="text" id="mobilenumber" name="Mobile number" autocomplete="off">
+                <span id="numbererror" class="error"></span>
+            </div>
+            <div id="pword">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="Password" autocomplete="off">
+                <span id="passworderror" class="error"></span>
+            </div>
+            <div id="reg">
+                <button type="submit" onclick="validateform()">Register now</button>
+            </div>
+        </div>
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>
