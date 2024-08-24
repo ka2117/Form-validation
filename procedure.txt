@@ -1,2 +1,0 @@
-Proper procedure has to be done to validate the form
-Digital signature is must to validate the form
